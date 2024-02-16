@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--primaryColar);
+  background: var(--primaryColar);
+  color: var(--whiteColar);
+}
+
+.btn:hover {
+  color: var(--primaryColar);
+  background: var(--whiteColar);
+  transition: 0.3s;
+}
+
+.title {
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 700;
+  color: var(--blackColar);
+}
+
+.desc {
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: var(--blackColar);
+  opacity: 0.7;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+.df {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#bactop {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  bottom: 20px;
+  right: 20px;
+  background: blue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.show-bactop {
+  display: flex !important;
+}
+
+.dark-mode {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  color: var(--blackColar);
+}
+
+.card__title {
+  padding: 10px 0 10px;
+  font-size: 21px;
+  line-height: 31px;
+  font-weight: 600;
+  color: var(--blackColar);
+}
+
+.light {
+  transition: 0.5s;
+  --whiteColar: black;
+  --blackColar: white;
+}
